@@ -3,13 +3,15 @@ $:.push File.expand_path("../lib", __FILE__)
 require "R-pesaPi/version"
 
 Gem::Specification.new do |s|
+  s.add_development_dependency "rspec"
+  s.add_dependency "activerecord",">=3.0.9"
   s.name        = "R-pesaPi"
   s.version     = R::Pesapi::VERSION
   s.authors     = ["George Githinji"]
   s.email       = ["georgkam@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{A ruby port of pesaPi mobile money API}
+  s.description = %q{A mobile money API ported from pesaPi}
 
   s.rubyforge_project = "R-pesaPi"
 
